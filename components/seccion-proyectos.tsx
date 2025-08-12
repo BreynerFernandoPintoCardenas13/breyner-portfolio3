@@ -10,21 +10,21 @@ import type { Proyecto } from "@/types/proyecto"
 const proyectos: Proyecto[] = [
   {
     id: 1,
-    titulo: "Proyecto JavaScript",
+    titulo: "BuyCar",
     descripcion:
-      "Proyecto desarrollado con JavaScript vanilla, implementando funcionalidades modernas y buenas prácticas de desarrollo. Incluye manipulación del DOM, eventos interactivos y diseño responsivo.",
-    urlGithub: "https://github.com/BreynerFernandoPintoCardenas13/Proyecto_JavaScript_PintoBreyner",
-    urlDemo: null, // No disponible
-    imagen: "/placeholder.svg?height=400&width=600",
+      "Proyecto desarrollado en grupo, utilizando tecnologías modernas como (React, TypeScript, Tailwinds, Express y conectado con Cardano) y buenas prácticas de desarrollo.",
+    urlGithub: "https://github.com/DavidAdolfoGomezUribe/ProyectoSerPitch",
+    urlDemo: "https://proyecto-ser-pitch.vercel.app/", // No disponible
+    imagen: "/buycar.svg?height=400&width=600",
   },
   {
     id: 2,
     titulo: "Don Breyner Proyect",
     descripcion:
-      "Proyecto web completo que demuestra habilidades en desarrollo full-stack. Implementa arquitectura moderna, interfaz de usuario intuitiva y funcionalidades avanzadas para una experiencia de usuario óptima.",
+      "App de Taxis, en la cual los usuarios pueden solicitar un taxi de manera rápida y sencilla, y realizar el pago por medio de Cardano, utilizando tecnologias como React, TypeScript, Tailwind y Lucid.",
     urlGithub: "https://github.com/BreynerFernandoPintoCardenas13/donbreynerproyect",
     urlDemo: null, // No disponible
-    imagen: "/placeholder.svg?height=400&width=600",
+    imagen: "/donbreyner.svg?height=400&width=600",
   },
 ]
 
@@ -64,8 +64,22 @@ export function SeccionProyectos() {
           className="text-4xl md:text-5xl font-bold text-center mb-16 text-white"
         >
           Proyectos Destacados
+          
         </motion.h2>
-
+        <motion.p
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: [0.25, 0.46, 0.45, 0.94],
+            delay: 0.2,
+          }}
+          viewport={{ once: true, margin: "-50px" }}
+          className="text-4x0.5 md:text-2xl  text-center mb-10 text-white"
+        >
+          hay muchos mas proyectos!! Visita mi github para conocerlos
+          
+        </motion.p>
         <div className="grid md:grid-cols-2 gap-8">
           {proyectosMezclados.map((proyecto, indice) => (
             <motion.div

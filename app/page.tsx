@@ -5,6 +5,8 @@ import { FondoSatelital } from "@/components/fondo-satelital"
 import { HeaderNavegacion } from "@/components/header-navegacion"
 import { SeccionMiViaje } from "@/components/seccion-mi-viaje"
 import { SeccionSobreMi } from "@/components/seccion-sobre-mi"
+import { SeccionMiEducacion } from "@/components/seccion-mi-educacion"
+import { SeccionMisHabilidades } from "@/components/seccion-mis-habilidades"
 
 export default function PaginaInicio() {
   return (
@@ -28,8 +30,14 @@ export default function PaginaInicio() {
         {/* Sección: Mi viaje */}
         <SeccionMiViaje />
 
-        {/* Nueva sección: Sobre mí */}
+        {/* Sección: Sobre mí */}
         <SeccionSobreMi />
+
+        {/* Nueva sección: Mi Educación */}
+        <SeccionMiEducacion />
+
+        {/* Nueva sección: Mis Habilidades */}
+        <SeccionMisHabilidades />
 
         {/* Footer de contacto */}
         <FooterContacto />

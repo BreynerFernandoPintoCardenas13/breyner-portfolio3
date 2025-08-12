@@ -23,27 +23,27 @@ const elementosTimeline: ElementoTimeline[] = [
     id: 1,
     titulo: "Mi primera página web",
     texto:
-      "Mis primeros pasos en la programación, el inicio de un viaje sin retorno que me llevaría a aprender nuevas cosas, conocer nuevas personas pero más importante, a conocer de cuánto era capaz.",
+      "Mis primeros pasos en la programación, el inicio de un viaje sin retorno que me llevaría a aprender nuevas cosas, conocer nuevas personas pero más importante, a saber de cuánto era capaz.",
     tipo: "imagen",
     contenido: {
-      imagen: "/placeholder.svg?height=250&width=350&text=Mi+primera+página+web",
+      imagen: "/primerPagina.png?height=full&width=full&text=Mi+primera+página+web",
     },
   },
   {
     id: 2,
-    titulo: "Aprendiendo CSS",
+    titulo: "Mejorando Poco a Poco",
     texto:
-      "Me sentía como un verdadero diseñador gráfico, aunque al principio todo lo hacía con absolute y siendo de todo menos responsive me parecía mágico ver mis ideas tener forma, de hecho como ejercicio hice 50 landing pages.",
+      "A medida que avanzaba por el mundo de la programacion web, empece a manejar CSS, me sentia muy feliz ya que mis ideas tomaban forma y color e hice un ejercicio de hacer 26 landing pages.",
     tipo: "tarjeta",
     contenido: {
       proyecto: {
         id: 101,
-        titulo: "50 Landing Pages Challenge",
+        titulo: "26 Landing Pages Challenge",
         descripcion:
-          "Colección de 50 landing pages creadas como ejercicio de aprendizaje de CSS, explorando diferentes diseños, layouts y técnicas de estilizado.",
-        urlGithub: "https://github.com/BreynerFernandoPintoCardenas13",
-        urlDemo: null,
-        imagen: "/placeholder.svg?height=300&width=500&text=CSS+Landing+Pages",
+          "Colección de 26 landing pages creadas como ejercicio de aprendizaje de CSS, explorando diferentes diseños, layouts y técnicas de estilizado.",
+        urlGithub: "https://github.com/BreynerFernandoPintoCardenas13/landing-page-designs",
+        urlDemo: "https://breynerfernandopintocardenas13.github.io/landing-page-designs/",
+        imagen: "/landingpages.png?height=300&width=500&text=CSS+Landing+Pages",
       },
     },
   },
@@ -54,7 +54,7 @@ const elementosTimeline: ElementoTimeline[] = [
       "Cuando me adentré en Python recuerdo que fue un cambio radical, pensar en la lógica, bucles, objetos, arrays, ids y sobre todo, la identación me costó demasiado, pero al final tras mucho esfuerzo y dedicación logré aprender y programar fluidamente.",
     tipo: "imagen",
     contenido: {
-      imagen: "/placeholder.svg?height=250&width=350&text=Python+Programming",
+      imagen: "/python.png?height=250&width=350&text=Python+Programming",
     },
   },
   {
@@ -62,26 +62,34 @@ const elementosTimeline: ElementoTimeline[] = [
     titulo: "JavaScript",
     texto:
       "El siguiente paso en mi viaje era aprender a usar JavaScript, rápidamente me di cuenta que era todo un reto y que iba a necesitar de disciplina para poder completar exitosamente los retos que JS traía, en el camino agridulce que fue aprender JS, me terminé enamorando aún más de la lógica y de lo que era capaz de hacer con la programación.",
-    tipo: "imagen",
+    tipo: "tarjeta",
     contenido: {
-      imagen: "/placeholder.svg?height=250&width=350&text=JavaScript+Journey",
+      proyecto: {
+        id: 103,
+        titulo: "Simulador de batallas",
+        descripcion:
+          "Simulador de batallas por consola. Proyecto que hice para poner aprueba mis conocimientos basicos de JS, el proyecto que me hizo engancharme a la logica de JS.",
+        urlGithub: "https://github.com/JuanJosePradaContreras/Simulador_de_Batallas-RPG_por_Consola",
+        urlDemo: null,
+        imagen: "/js.png?height=300&width=500&text=Proyecto+Grupal+Frameworks",
+      },
     },
   },
   {
     id: 5,
-    titulo: "Auto Aprendizaje",
+    titulo: "LO MAS IMPORTANTE",
     texto:
-      "A medida que avanzaba y aprendía más, me percaté de la existencia de frameworks, librerías, y demás cosas que simplificaban, optimizaban o sintetizaban el código, y decidí aprenderlos por mi propia cuenta, tales como TypeScript, React, Express y Tailwind son algunas de las habilidades que he aprendido por mi cuenta y encontré personas que al igual que yo querían mejorar e hicimos un proyecto en conjunto, el cual es uno de mis mejores proyectos grupales.",
+      "Pronto descubri que era lo mas importante en este campo laboral, el AUTO APRENDIZAJE, rapidamente me interese e investigue, descubri que habia librerias, frameworks y diversas tecnologias que facilitaban la programacion y simplificaban procesos como Django, React, Express, Next.js, TypeScript, pero era algo que debia aprender por mi cuenta. Encontre personas con mi mismo pensamiento y empece a trabajar con ellas.",
     tipo: "tarjeta",
     contenido: {
       proyecto: {
         id: 102,
-        titulo: "Proyecto Grupal - Frameworks Modernos",
+        titulo: "Play_",
         descripcion:
-          "Proyecto colaborativo desarrollado con TypeScript, React, Express y Tailwind CSS. Una experiencia de aprendizaje grupal que resultó en uno de mis mejores trabajos en equipo.",
-        urlGithub: "https://github.com/BreynerFernandoPintoCardenas13",
-        urlDemo: null,
-        imagen: "/placeholder.svg?height=300&width=500&text=Proyecto+Grupal+Frameworks",
+          "Proyecto el cual busca explicar a travez de un juego didactico que es una base de datos NoSQL, utilizando frameworks y diversas tecnologias como: Next.js, React, MockAPI, JS.",
+        urlGithub: "https://github.com/DavidAdolfoGomezUribe/proyectoprogresivobd",
+        urlDemo: "https://proyectoprogresivobd.vercel.app/",
+        imagen: "/play.png?height=300&width=500&text=Proyecto+Grupal+Frameworks",
       },
     },
   },
@@ -233,8 +241,8 @@ function ContenidoPunto({
     >
       {/* Título y texto */}
       <div>
-        <h3 className="text-xl md:text-2xl font-bold text-white mb-3">{elemento.titulo}</h3>
-        <p className="text-base text-slate-300 leading-relaxed max-w-2xl">{elemento.texto}</p>
+        <h3 className="text-xl md:text-4xl font-bold text-white mb-3">{elemento.titulo}</h3>
+        <p className="text-xl md:text-4x1 text-slate-300 leading-relaxed max-w-2xl">{elemento.texto}</p>
       </div>
 
       {/* Contenido visual según el tipo */}
@@ -244,6 +252,7 @@ function ContenidoPunto({
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.4 }}
           className="bg-white rounded-xl p-4 shadow-lg max-w-md"
+          style={{maxWidth: "800px"}}
         >
           <img
             src={elemento.contenido.imagen || "/placeholder.svg"}
@@ -310,7 +319,7 @@ export function SeccionMiViaje() {
           animate={estaEnVista ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12"
-          style={{ minHeight: "150vh" }} // Altura suficiente para permitir scroll
+          style={{ minHeight: "50vh" }} // Altura suficiente para permitir scroll
         >
           {/* Columna izquierda: Línea del timeline */}
           <div className="lg:col-span-2 flex justify-center lg:justify-end">
@@ -323,7 +332,7 @@ export function SeccionMiViaje() {
           <div className="lg:col-span-10">
             <div className="space-y-8 pt-8">
               {elementosTimeline.map((elemento, indice) => (
-                <div key={elemento.id} className="min-h-[400px] flex items-center">
+                <div key={elemento.id} className="min-h-[300px] flex items-center">
                   <ContenidoPunto elemento={elemento} estaActivo={indice === puntoActivo} />
                 </div>
               ))}

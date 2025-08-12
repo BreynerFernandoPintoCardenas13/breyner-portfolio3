@@ -11,6 +11,8 @@ const enlaces = [
   { nombre: "Proyectos", href: "#proyectos" },
   { nombre: "Mi Viaje", href: "#mi-viaje" },
   { nombre: "Sobre Mí", href: "#sobre-mi" },
+  { nombre: "Educación", href: "#mi-educacion" },
+  { nombre: "Habilidades", href: "#mis-habilidades" },
   { nombre: "Contáctame", href: "#contacto" },
 ]
 
@@ -40,13 +42,13 @@ export function HeaderNavegacion() {
       transition={{ duration: 0.6 }}
     >
       <nav className="container mx-auto px-4 h-full flex items-center justify-center">
-        <ul className="flex space-x-6 md:space-x-8">
+        <ul className="flex flex-wrap space-x-3 md:space-x-6 justify-center">
           {enlaces.map((enlace) => (
             <li key={enlace.nombre}>
               <a
                 href={enlace.href}
                 onClick={(e) => manejarClickEnlace(e, enlace.href)}
-                className="text-white hover:text-blue-400 transition-colors duration-200 font-medium text-sm md:text-base"
+                className="text-white hover:text-blue-400 transition-colors duration-200 font-medium text-xs md:text-sm lg:text-base whitespace-nowrap"
               >
                 {enlace.nombre}
               </a>

@@ -51,7 +51,7 @@ export function TituloHero() {
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
       >
-        Junior Full‑Stack Developer — Colombia — 17 años
+        Junior Full‑Stack Developer — Colombia 
       </motion.p>
     </motion.div>
   )

@@ -6,9 +6,9 @@ import { Github, ExternalLink } from "lucide-react"
 
 // Fotos para el carrusel (placeholder - reemplaza con tus fotos reales)
 const fotosCarrusel = [
+  "/prueba.png?height=400&width=300&text=Foto+1+Breyner",
   "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
-  "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
-  "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
+  "/prueba2.png?height=400&width=300&text=Foto+1+Breyner",
   "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
   "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
   "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
@@ -43,7 +43,7 @@ function CarruselFondo({ fotos }: { fotos: string[] }) {
             className="absolute inset-0"
             initial={{ opacity: 0, scale: 1.1 }}
             animate={{
-              opacity: indice === fotoActiva ? 0.15 : 0,
+              opacity: indice === fotoActiva ? 3 : 0,
               scale: indice === fotoActiva ? 1 : 1.1,
             }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -134,14 +134,15 @@ export function SeccionSobreMi() {
             className="space-y-6"
           >
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed">
-              Soy un <span className="text-blue-400 font-semibold">desarrollador web apasionado</span> por crear
+              Soy <span className="text-blue-400 font-semibold">Breyner Pinto </span> un desarrollador junior Full Stack al cual le encanta dar
               soluciones funcionales, modernas y eficientes, capaz de transformar ideas en productos digitales reales.
-              Desde mi formación en el SENA en grado 11, he trabajado en proyectos que han puesto a prueba tanto mis
-              habilidades técnicas como blandas, destacando mi{" "}
+              Desde mi formación en el SENA en grado 11 cai en amor con la programacion, y desde ese momento supe que mi proyecto de vida iba a ir encaminado a ello.
+              mis fuertes son la
+              {" "}
               <span className="text-blue-400 font-semibold">
                 creatividad, empatía y capacidad de resolver problemas
               </span>{" "}
-              bajo presión.
+              bajo presión, pero mi mayor fortaleza es <span className="text-green-400 font-semibold"> la pasion que le pongo a todo lo que hago</span>
             </p>
 
             <p className="text-lg md:text-xl text-slate-200 leading-relaxed">

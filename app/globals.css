@@ -63,6 +63,23 @@
   .glow-green {
     box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
   }
+
+  /* Estilos 3D para el efecto flip de tarjetas */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
 }
 
 @keyframes fadeIn {
@@ -120,8 +137,7 @@
 
 /* Estilos para focus visible */
 .focus-visible:focus-visible {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
+  @apply outline-2 outline-blue-500 outline-offset-2;
 }
 
 /* Efectos de parallax y profundidad */

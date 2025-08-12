@@ -27,8 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Breyner Pinto - Junior Full-Stack Developer",
     description: "Portfolio de Breyner Pinto, desarrollador Full-Stack junior de Colombia.",
-  },
-    generator: 'v0.dev'
+  }
 }
 
 export default function RootLayout({
