@@ -57,6 +57,15 @@ const habilidades: Habilidad[] = [
     enlace: "https://expressjs.com/",
     color: "from-green-400 to-green-600",
   },
+    {
+    id: 8,
+    nombre: "Django",
+    categoria: "Backend",
+    descripcion: "Framework de Python para construir APIs REST y aplicaciones web",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+    enlace: "https://www.djangoproject.com/",
+    color: "from-red-400 to-red-600",
+  },
   {
     id: 5,
     nombre: "Python",
@@ -97,6 +106,15 @@ const habilidades: Habilidad[] = [
     enlace: "https://git-scm.com/",
     color: "from-purple-400 to-purple-600",
   },
+    {
+    id: 9,
+    nombre: "Scrum",
+    categoria: "Otros",
+    descripcion: "Framework de metodologia agil que se utiliza en equipos de desarrollo de software",
+    logo: "/scrum.png?height=full&width=full&text=Mi+primera+página+web",
+    enlace: "https://www.scrum.org/",
+    color: "from-purple-400 to-purple-600",
+  }
 ]
 
 // Obtener categorías únicas

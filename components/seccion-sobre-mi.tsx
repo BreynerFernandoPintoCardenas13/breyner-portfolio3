@@ -6,12 +6,12 @@ import { Github, ExternalLink } from "lucide-react"
 
 // Fotos para el carrusel (placeholder - reemplaza con tus fotos reales)
 const fotosCarrusel = [
-  "/prueba.png?height=400&width=300&text=Foto+1+Breyner",
+  "/fondo1.png?height=200&width=300&text=Foto+1+Breyner",
+  "/prueba2.png?height=200&width=300&text=Foto+1+Breyner",
+  "/prueba3.png?height=200&width=300&text=Foto+1+Breyner",
+/*   "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
   "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
-  "/prueba2.png?height=400&width=300&text=Foto+1+Breyner",
-  "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
-  "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
-  "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner",
+  "/primerPagina.png?height=400&width=300&text=Foto+1+Breyner", */
 ]
 
 // Hook para el carrusel automático
@@ -41,10 +41,10 @@ function CarruselFondo({ fotos }: { fotos: string[] }) {
           <motion.div
             key={indice}
             className="absolute inset-0"
-            initial={{ opacity: 0, scale: 1.1 }}
+            initial={{ opacity: 0, scale: 0.1 }}
             animate={{
               opacity: indice === fotoActiva ? 3 : 0,
-              scale: indice === fotoActiva ? 1 : 1.1,
+              scale: indice === fotoActiva ? 1 : 0.1,
             }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
           >
@@ -224,7 +224,7 @@ export function SeccionSobreMi() {
           {fotosCarrusel.map((_, indice) => (
             <motion.div
               key={indice}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              className={`w-1 h-1 rounded-full transition-all duration-300 ${
                 indice === fotoActiva ? "bg-blue-400 w-8" : "bg-slate-600"
               }`}
               animate={{

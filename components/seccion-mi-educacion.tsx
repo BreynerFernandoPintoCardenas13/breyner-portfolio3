@@ -23,10 +23,10 @@ const elementosEducacion: ElementoEducacion[] = [
     id: 1,
     institucion: "Campuslands",
     titulo: "Técnico en Desarrollo de Software",
-    año: "2024",
+    año: "2025",
     descripcion: "Formación intensiva en desarrollo web full-stack con tecnologías modernas y metodologías ágiles.",
     enlace: "https://campuslands.com/",
-    logo: "/",
+    logo: "/campus.png?height=full&width=full&text=Mi+primera+página+web",
     color: "from-blue-500 to-blue-700",
     tipo: "enlace",
   },
@@ -34,10 +34,10 @@ const elementosEducacion: ElementoEducacion[] = [
     id: 2,
     institucion: "SENA",
     titulo: "Técnico en Programación de Software",
-    año: "2023",
+    año: "2024",
     descripcion: "Fundamentos sólidos en programación, algoritmos y desarrollo de aplicaciones de software.",
-    enlace: "#", // Placeholder para el certificado
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Logo_SENA.svg/1200px-Logo_SENA.svg.png",
+    enlace: "https://certificados.sena.edu.co/CertificadoDigital/com.sena.downloadfile?FileName=C%3A%5CProgram+Files%5CApache+Software+Foundation%5CTomcat+8.5%5Ctemp%5C9309002729497TI1099740804C.pdf&IsDelete=true", // Placeholder para el certificado
+    logo: "/sena.png?height=full&width=full&text=Mi+primera+página+web",
     color: "from-green-500 to-green-700",
     tipo: "certificado",
   },
@@ -55,7 +55,7 @@ const elementosEducacion: ElementoEducacion[] = [
 ]
 
 // Componente de medidor circular para el nivel de inglés
-function MedidorCircular({ nivel = "B2", porcentaje = 75 }: { nivel: string; porcentaje?: number }) {
+function MedidorCircular({ nivel = "B2", porcentaje = 100 }: { nivel: string; porcentaje?: number }) {
   const circunferencia = 2 * Math.PI * 45 // Radio de 45
   const offset = circunferencia - (porcentaje / 100) * circunferencia
 
@@ -113,7 +113,8 @@ function TarjetaEducacion({ elemento }: { elemento: ElementoEducacion }) {
       >
         {/* Frente de la tarjeta */}
         <div className="absolute inset-0 w-full h-full backface-hidden">
-          <div className="bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 h-full border border-slate-700/50 shadow-lg flex flex-col items-center justify-center text-center">
+          <div className="bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 h-full border border-slate-700/50 shadow-lg flex flex-col items-center justify-center text-center"
+            >
             {/* Logo de la institución */}
             <div
               className={`p-4 rounded-2xl bg-gradient-to-br ${elemento.color} mb-4 shadow-lg w-20 h-20 flex items-center justify-center`}
