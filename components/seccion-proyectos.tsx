@@ -14,8 +14,8 @@ const proyectos: Proyecto[] = [
     descripcion:
       "Proyecto desarrollado en grupo, utilizando tecnologías modernas como (React, TypeScript, Tailwinds, Express y conectado con Cardano) y buenas prácticas de desarrollo.",
     urlGithub: "https://github.com/DavidAdolfoGomezUribe/ProyectoSerPitch",
-    urlDemo: "https://proyecto-ser-pitch.vercel.app/", // No disponible
-    imagen: "/buycar.svg?height=400&width=600",
+    urlDemo: "https://proyecto-ser-pitch.vercel.app/", 
+    imagen: "/buycar.png?height=400&width=600",
   },
   {
     id: 2,
