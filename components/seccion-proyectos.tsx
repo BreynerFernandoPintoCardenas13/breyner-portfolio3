@@ -24,7 +24,7 @@ const proyectos: Proyecto[] = [
       "App de Taxis, en la cual los usuarios pueden solicitar un taxi de manera rápida y sencilla, y realizar el pago por medio de Cardano, utilizando tecnologias como React, TypeScript, Tailwind y Lucid.",
     urlGithub: "https://github.com/BreynerFernandoPintoCardenas13/donbreynerproyect",
     urlDemo: null, // No disponible
-    imagen: "/donbreyner.svg?height=400&width=600",
+    imagen: "/donbreyner.png?height=400&width=600",
   },
 ]
 
